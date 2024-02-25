@@ -50,9 +50,11 @@ SELECT DISTINCT author_id AS ID FROM Views
 WHERE  author_id=viewer_id
 ORDER BY author_id ASC
 ---ex13
-
+SELECT part, assembly_step FROM parts_assembly
+WHERE finish_date	IS NULL
 ---ex14
 SELECT * FROM lyft_drivers
 WHERE yearly_salary <=30000 OR yearly_salary >=70000
 ---ex15
-
+select advertising_channel from uber_advertising
+WHERE YEAR = 2019 AND MONEY_SPENT > 100000
