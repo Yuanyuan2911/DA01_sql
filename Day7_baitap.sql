@@ -46,3 +46,6 @@ POSITION('a' in first_name) as position
 from worker
 where first_name='Amitah'
 ---ex10
+SELECT substring(title, length(winery)+2,4)
+FROM winemag_p2
+WHERE country='Macedonia'
